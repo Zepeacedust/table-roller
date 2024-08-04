@@ -58,9 +58,13 @@ class ASTBinaryOperator(ASTNode):
     
     def evaluate(self, context):
         lhs = self.lhs.evaluate(context)
-
-
         rhs = self.rhs.evaluate(context)
+
+        if isinstance(lhs, str):
+            rhs = str(rhs)
+        elif isinstance(rhs, str):
+            lhs = str(lhs)
+
         if self.operator == "==":
             return int(lhs == rhs)
         if self.operator == "<=":

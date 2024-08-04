@@ -1,0 +1,60 @@
+dm = 5;
+
+lots = [
+    0:  0,
+    1:  0,
+    2:  1d6,
+    3:  1d6,
+    4:  2d6,
+    5:  2d6,
+    6:  3d6,
+    7:  3d6,
+    8:  3d6,
+    9:  4d6,
+    10: 4d6,
+    11: 4d6,
+    12: 5d6,
+    13: 5d6,
+    14: 5d6,
+    15: 6d6,
+    16: 6d6,
+    17: 7d6,
+    18: 8d6,
+    19: 9d6,
+    20: 10d6,
+    21: 10d6,
+    22: 10d6,
+    23: 10d6,
+    24: 10d6,
+    25: 10d6,
+    26: 10d6,
+];
+
+
+incident = 2d6 + dm + 2 on lots;
+output incident + " incidental lots";
+
+lotnr = 0;
+while (lotnr < incident) {
+    lotnr = lotnr + 1;
+    output "incinental lot number " + lotnr + " has size " + 1d6 + " tons";
+}
+
+
+minor = 2d6 + dm on lots;
+
+output "\n" + minor + " minor lots";
+lotnr = 0;
+while (lotnr < minor) {
+    lotnr = lotnr + 1;
+    output "minor lot number " + lotnr + " has size " + 1d6 * 5 + " tons";
+}
+
+major = 2d6 + dm - 4 on lots;
+output "\n" + major + " major lots";
+
+lotnr = 0;
+while (lotnr < major) {
+    lotnr = lotnr + 1;
+    output "major lot number " + lotnr + " has size " + 1d6 * 10 + " tons";
+}

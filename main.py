@@ -1,6 +1,6 @@
 from syntax import Parser
 
-test = Parser("tests/lookup_test")
+test = Parser("traveller_freight_roller")
 
 ast = test.generate()
 
