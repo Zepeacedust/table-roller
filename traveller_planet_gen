@@ -1,0 +1,6 @@
+size = 2d6-2;
+atmosphere = 2d6-7+size;
+
+
+output atmosphere;
+output size;

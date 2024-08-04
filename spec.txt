@@ -1,0 +1,8 @@
+Skref 1:
+    getað fengið results á context free tables
+
+Skref 2:
+    skrá þau results í variables og notað þau variables í hluti
+
+skref 3: 
+    nested tables

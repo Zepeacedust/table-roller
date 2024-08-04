@@ -1,0 +1,13 @@
+output 1+6*3-1d6;
+
+T = [
+    1:"bruh",
+    2:"Bruh",
+    3:"Brih",
+    4:"Bröh",
+];
+
+A = 1d4;
+output A;
+output A on T;
+output A == A

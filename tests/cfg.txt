@@ -1,0 +1,5 @@
+S -> aAb
+SA -> akjsdhfalkjsdf
+A -> a
+   | aA
+

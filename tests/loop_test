@@ -1,0 +1,7 @@
+I = 0;
+
+while (I<100) {
+    output I;
+
+    I = I + 1;
+}
